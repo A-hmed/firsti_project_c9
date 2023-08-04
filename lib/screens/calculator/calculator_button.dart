@@ -15,7 +15,8 @@ class CalculatorButton extends StatelessWidget {
             },
             child: Text(
               "$digit",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 24, fontWeight: FontWeight.bold, color: Colors.red),
             )));
   }
 }
