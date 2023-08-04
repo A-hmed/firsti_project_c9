@@ -9,14 +9,19 @@ class CalculatorButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        child: ElevatedButton(
+        child: TextButton(
             onPressed: () {
               onClick(digit);
             },
-            child: Text(
-              "$digit",
-              style: TextStyle(
-                  fontSize: 24, fontWeight: FontWeight.bold, color: Colors.red),
+            child: Container(
+              color: Colors.red,
+              child: Text(
+                "$digit",
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red),
+              ),
             )));
   }
 }
