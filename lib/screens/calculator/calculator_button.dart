@@ -11,15 +11,20 @@ class CalculatorButton extends StatelessWidget {
     return Expanded(
         child: Container(
       color: Colors.white,
-      child: ElevatedButton(
+      child: TextButton(
           onPressed: () {
             onClick(digit);
           },
-          child: Text(
-            "$digit",
-            style: TextStyle(
-                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.red),
-          )),
+          child: Container(
+              color: Colors.red,
+              child: Text(
+                "$digit",
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red),
+              ),
+            )),
     ));
   }
 }
